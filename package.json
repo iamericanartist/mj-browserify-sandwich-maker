@@ -1,29 +1,28 @@
 {
-  "name": "jquery-sandwich-maker",
+  "name": "browserify-test",
   "version": "1.0.0",
-  "description": "![Sandwich Maker](iifeSandwich.jpg?raw=true \"Sandwich Maker Screenshot\") [Check it out on CODEPEN](http://codepen.io/IAmericanArtist/pen/YWQGGk)",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamericanartist/mj-jquery-sandwich-maker.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iamericanartist/mj-jquery-sandwich-maker/issues"
-  },
-  "homepage": "https://github.com/iamericanartist/mj-jquery-sandwich-maker#readme",
   "dependencies": {
-    "jquery": "^3.0.0"
-  },
-  "devDependencies": {
+    "browserify": "^13.0.1",
     "gulp": "^3.9.1",
+    "gulp-jasmine": "^2.4.0",
     "gulp-jshint": "^2.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.8",
+    "jasmine-spec-reporter": "^2.5.0",
+    "jquery": "^3.0.0",
     "jshint": "^2.9.2",
-    "jshint-stylish": "^2.2.0"
+    "jshint-stylish": "^2.2.0",
+    "lodash.assign": "^4.0.9",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
   }
 }
