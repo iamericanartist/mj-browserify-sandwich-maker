@@ -1,9 +1,8 @@
-# JQuery $Sandwich Maker
-##Modern JavaScript / JQuery-ified / Sandwich Maker
+# Browserify Sandwich Maker
+##Modern JavaScript / Browserify / Sandwich Maker
 
 ![Sandwich Maker](browserifiedSandwich.jpg?raw=true "Browserify Sandwich Maker Screenshot")
 [Check it out on CODEPEN](http://codepen.io/IAmericanArtist/pen/YWExLX)
-
 
 ## Instructions
 
