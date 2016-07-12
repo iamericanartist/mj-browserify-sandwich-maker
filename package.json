@@ -1,0 +1,29 @@
+{
+  "name": "jquery-sandwich-maker",
+  "version": "1.0.0",
+  "description": "![Sandwich Maker](iifeSandwich.jpg?raw=true \"Sandwich Maker Screenshot\") [Check it out on CODEPEN](http://codepen.io/IAmericanArtist/pen/YWQGGk)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamericanartist/mj-jquery-sandwich-maker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamericanartist/mj-jquery-sandwich-maker/issues"
+  },
+  "homepage": "https://github.com/iamericanartist/mj-jquery-sandwich-maker#readme",
+  "dependencies": {
+    "jquery": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-watch": "^4.3.8",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0"
+  }
+}
