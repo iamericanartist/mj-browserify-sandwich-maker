@@ -1,4 +1,10 @@
-// console.log("<<<7 IIFE DOMhandler.js loaded >>>");
+
+const maker = require('./SandwichMaker'); // "./"" if in same folder,  "../"" if in outer
+const bread = require('./bread'); // "./"" if in same folder,  "../"" if in outer
+const meat = require('./meat'); // "./"" if in same folder,  "../"" if in outer
+const cheese = require('./cheese'); // "./"" if in same folder,  "../"" if in outer
+const condiment = require('./condiments'); // "./"" if in same folder,  "../"" if in outer
+const veggie = require('./veggies'); // "./"" if in same folder,  "../"" if in outer
 
 var finalSandwichPrice = 0;   //Variable to hold the final price. Default to 0.
 var selectedTopping;          //Variable to hold topping that the user selects
@@ -19,7 +25,7 @@ $breadChooser.click(function(event){
   selectedTopping = selectedTopping.split("--");          //Splitting the selectedTopping gives us an array of "btn [0]" and "(bread choosen [1])"
   
   if (selectedTopping[0] === "btn"){
-    let breads = SandwichMaker.getBreadPrices();          //Returns the object representing our breads and prices
+    let breads = bread.getBreadPrices();          //Returns the object representing our breads and prices
     let breadKey = selectedTopping[1];                    //Represents the bread chosen
     finalSandwichPrice += breads[breadKey];               // Add the topping to the SandwichMaker to increase the total price
     $sandwichEl.append(`+$${breads[breadKey]} for ${selectedTopping[1]}<br>`); //Output to DOM on new line
@@ -35,7 +41,7 @@ $meatChooser.click(function(event) {
   selectedTopping = selectedTopping.split("--");
   
   if (selectedTopping[0] === "btn"){
-    let meats = SandwichMaker.getMeatPrices();
+    let meats = meat.getMeatPrices();
     let meatKey = selectedTopping[1];
     finalSandwichPrice += meats[meatKey];
     $sandwichEl.append(`+$${meats[meatKey]} for ${selectedTopping[1]}<br>`);
@@ -51,7 +57,7 @@ $cheeseChooser.click(function(event) {
   selectedTopping = selectedTopping.split("--");
   
   if (selectedTopping[0] === "btn"){
-    let cheeses = SandwichMaker.getCheesePrices();
+    let cheeses = cheese.getCheesePrices();
     let cheeseKey = selectedTopping[1];
     finalSandwichPrice += cheeses[cheeseKey];
     $sandwichEl.append(`+$${cheeses[cheeseKey]} for ${selectedTopping[1]}<br>`);
@@ -67,7 +73,7 @@ $condimentChooser.click(function(event) {
   selectedTopping = selectedTopping.split("--");
   
   if (selectedTopping[0] === "btn"){
-    let condiments = SandwichMaker.getCondimentPrices();
+    let condiments = condiment.getCondimentPrices();
     let condimentKey = selectedTopping[1];
     finalSandwichPrice += condiments[condimentKey];
     $sandwichEl.append(`+$${condiments[condimentKey]} for ${selectedTopping[1]}<br>`);
@@ -83,7 +89,7 @@ $veggieChooser.click(function(event) {
   selectedTopping = selectedTopping.split("--");
   
   if (selectedTopping[0] === "btn"){
-    let veggies = SandwichMaker.getVeggiePrices();
+    let veggies = veggie.getVeggiePrices();
     let veggieKey = selectedTopping[1];
     finalSandwichPrice += veggies[veggieKey];
     $sandwichEl.append(`+$${veggies[veggieKey]} for ${selectedTopping[1]}<br>`);
@@ -94,4 +100,5 @@ $veggieChooser.click(function(event) {
   }
 });
 
-console.log("<<<7 is last... Not IIFE tho >>>");
+
+console.log("<<< 7 DOMhandler >>>");

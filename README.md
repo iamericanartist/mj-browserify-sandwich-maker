@@ -1,10 +1,15 @@
 # JQuery $Sandwich Maker
 ##Modern JavaScript / JQuery-ified / Sandwich Maker
 
-![Sandwich Maker](iifeJquerySandwich.jpg?raw=true "Sandwich Maker Screenshot")
-[Check it out on CODEPEN](http://codepen.io/IAmericanArtist/pen/AXrrxP)
-(Not a required exercise, more for JQuery practice)
+![Sandwich Maker](browserifiedSandwich.jpg?raw=true "Browserify Sandwich Maker Screenshot")
+[Check it out on CODEPEN](http://codepen.io/IAmericanArtist/pen/YWExLX)
 
+
+## Instructions
+
+Convert your Sandwich Maker code to use CommonJS module pattern instead of the IIFE pattern and have a [Gulp task](../resources/BROWSERIFY_GULPFILE.md) for compiling your modules.
+
+***
 ## Instructions
 
 Create a sandwich order form that allows the user to select all the ingredients for a custom deli sandwich. Create a `Sandwich` module, then create the following as individual modules, using IIFE syntax, to augment `Sandwich`:  
@@ -96,4 +101,3 @@ meatChooser.addEventListener("change", function(event) {
   // Add the topping to the SandwichMaker to increase the total price
 });
 ```
-# Initialize repo

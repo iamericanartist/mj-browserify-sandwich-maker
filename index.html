@@ -7,10 +7,10 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-	<h1>The JQuery IIFE $Sandwich </h1>
+	<h1>The Browserified JQuery $Sandwich </h1>
 
 	<fieldset>
-		<legend>Choose Your Options</legend>
+		<h1 id="title">Choose Your Options</h1>
 
 		<h2>Choose your Bread:</h2>
 		<div class="choosers" id="breads"> 
@@ -62,8 +62,13 @@
 	<br>
 	<div id="instructions">
 
-		<h2>A Jquery-ifyed Version!</h2>
+		<h2>A Browserified Jquery-ed Version!</h2>
+		<h2>Instructions</h2>
+		<p>Convert your Sandwich Maker code to use CommonJS module pattern instead of the IIFE pattern 
+		and have a [Gulp task](../resources/BROWSERIFY_GULPFILE.md) for compiling your modules.</p>
+		
 		<hr>
+		<h1>Sandwich Maker</h1>
 		<h2>Instructions</h2>
 		<p>Create a sandwich order form that allows the user to select all the ingredients for a custom deli sandwich. Create a `Sandwich` module, then create the following as individual modules, using IIFE syntax, to augment `Sandwich`: </p> 
 
@@ -90,25 +95,6 @@
 	</div>
 
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="javascripts/SandwichMaker.js"></script>
-	<script src="javascripts/bread.js"></script>
-	<script src="javascripts/meat.js"></script>
-	<script src="javascripts/cheese.js"></script>
-	<script src="javascripts/condiments.js"></script>
-	<script src="javascripts/veggies.js"></script>
-	<script src="javascripts/DOMhandler.js"></script>
-
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  
-  <script src="js/main.js"></script>
+  <script src="dist/bundle.js"></script>
 </body>
 </html>
